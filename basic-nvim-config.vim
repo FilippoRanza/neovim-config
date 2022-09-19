@@ -10,7 +10,7 @@ set softtabstop=4
 set smartindent
 
 
-set relativenumber
+set number relativenumber
 
 set ruler
 set showcmd
