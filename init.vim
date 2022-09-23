@@ -19,3 +19,5 @@ colorscheme tokyonight-storm
 
 highlight LineNr guiFg=yellow
 highlight LineNr ctermfg=yellow
+
+source $HOME/.config/nvim/mappings.vim
