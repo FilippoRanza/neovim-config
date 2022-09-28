@@ -14,6 +14,8 @@ return require('packer').startup(function (use)
     use 'tpope/vim-fugitive'
     use 'lervag/vimtex'
     use 'dracula/vim'
+    use 'nvim-treesitter/nvim-treesitter' 
+    use 'p00f/nvim-ts-rainbow' 
 end)
 
 
