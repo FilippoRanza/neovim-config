@@ -11,6 +11,6 @@ function MakeTest()
 endfunction
 
 
-:map <C-B> :call MakeBuild()<cr>
-:map <C-T> :call MakeTest()<cr>
+:map <A-b> :call MakeBuild()<cr>
+:map <A-t> :call MakeTest()<cr>
 
