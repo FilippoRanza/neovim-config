@@ -19,3 +19,5 @@ set showcmd
 
 filetype plugin indent on
 set autoread
+
+set nohlsearch
