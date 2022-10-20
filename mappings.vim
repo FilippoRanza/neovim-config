@@ -1,13 +1,14 @@
+set autowrite
 
 function MakeBuild() 
     :wall
-    :make build
+    :make! build
 endfunction
 
 
 function MakeTest() 
     :wall
-    :make test
+    :make! test
 endfunction
 
 
