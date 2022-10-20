@@ -21,3 +21,5 @@ filetype plugin indent on
 set autoread
 
 set nohlsearch
+
+set mouse=
