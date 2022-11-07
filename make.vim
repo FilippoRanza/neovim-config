@@ -13,7 +13,7 @@ function MakeBuild()
 endfun
 
 function CloseTermOnEnter()
-    nnoremap <buffer> <CR> :q<CR>
+    nnoremap <buffer> <CR> :bd<CR>
 endfun
 
 autocmd TermClose * call CloseTermOnEnter()
