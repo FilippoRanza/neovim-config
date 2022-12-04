@@ -23,3 +23,5 @@ set autoread
 set nohlsearch
 
 set mouse=
+
+set splitright

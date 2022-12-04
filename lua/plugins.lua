@@ -16,6 +16,9 @@ return require('packer').startup(function (use)
     use 'dracula/vim'
     use 'nvim-treesitter/nvim-treesitter' 
     use 'p00f/nvim-ts-rainbow' 
+    use 'mizlan/iswap.nvim'
+    use 'zah/nim.vim'
 end)
+
 
 
