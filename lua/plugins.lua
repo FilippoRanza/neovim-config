@@ -18,6 +18,11 @@ return require('packer').startup(function (use)
     use 'p00f/nvim-ts-rainbow' 
     use 'mizlan/iswap.nvim'
     use 'zah/nim.vim'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { 'nvim-lua/plenary.nvim' }
+    }
+
 end)
 
 
