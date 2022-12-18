@@ -1,7 +1,7 @@
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "java", "lua", "rust", "python", "latex", "scala", "haskell" },
+  ensure_installed = { "java", "lua", "rust", "python", "latex"},
 
   sync_install = false,
 
