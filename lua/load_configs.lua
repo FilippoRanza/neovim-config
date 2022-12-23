@@ -8,3 +8,5 @@ require("config_toggleterminal")
 require("config_tree_sitter")
 
 require("config_telescope")
+
+require("config_iswap")
