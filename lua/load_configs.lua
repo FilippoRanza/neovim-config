@@ -10,3 +10,5 @@ require("config_tree_sitter")
 require("config_telescope")
 
 require("config_iswap")
+
+require("build_mappings")
