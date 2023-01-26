@@ -12,3 +12,5 @@ require("config_telescope")
 require("config_iswap")
 
 require("build_mappings")
+
+require("formatter_conf")

@@ -15,7 +15,7 @@ lua require('load_configs')
 source $HOME/.config/nvim/airline-config.vim
 
 " Set color scheme: must be after plugins load
-colorscheme dracula
+colorscheme rose-pine
 
 highlight LineNr guiFg=yellow
 highlight LineNr ctermfg=yellow

@@ -25,6 +25,16 @@ return require('packer').startup(function (use)
 
     use 'mbbill/undotree'
 
+    use({
+        'rose-pine/neovim',
+        dark_variant = "moon",
+        as = 'rose-pine',
+        config = function()
+            require("rose-pine").setup()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
+    use { 'mhartington/formatter.nvim' }
 end)
 
 
