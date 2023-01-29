@@ -16,3 +16,5 @@ require("build_mappings")
 require("formatter_conf")
 
 require("config_undotree")
+
+require("config_lsp")
