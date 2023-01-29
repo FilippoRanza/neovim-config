@@ -14,3 +14,5 @@ require("config_iswap")
 require("build_mappings")
 
 require("formatter_conf")
+
+require("config_undotree")
