@@ -1,4 +1,4 @@
-set autowrite
 
+noremap <space>p :pop<CR>
 
 
