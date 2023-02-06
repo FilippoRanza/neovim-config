@@ -18,3 +18,5 @@ require("formatter_conf")
 require("config_undotree")
 
 require("config_lsp")
+
+require("config_comment")
