@@ -37,6 +37,8 @@ return require('packer').startup(function (use)
     use { 'mhartington/formatter.nvim' }
     use { 'neovim/nvim-lspconfig' }
     use { 'numToStr/Comment.nvim' }
+-- mkdir
+    use { 'jghauser/mkdir.nvim' }
 end)
 
 
