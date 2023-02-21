@@ -13,11 +13,9 @@ return require('packer').startup(function (use)
     use 'vim-airline/vim-airline-themes'
     use 'tpope/vim-fugitive'
     use 'lervag/vimtex'
-    use 'dracula/vim'
     use 'nvim-treesitter/nvim-treesitter' 
     use 'p00f/nvim-ts-rainbow' 
     use 'mizlan/iswap.nvim'
-    use 'zah/nim.vim'
     use {
         'nvim-telescope/telescope.nvim',
         requires = { 'nvim-lua/plenary.nvim' }
