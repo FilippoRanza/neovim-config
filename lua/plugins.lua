@@ -37,6 +37,7 @@ return require('packer').startup(function (use)
     use { 'numToStr/Comment.nvim' }
 -- mkdir
     use { 'jghauser/mkdir.nvim' }
+    use {"nvim-treesitter/nvim-treesitter-textobjects" }
 end)
 
 

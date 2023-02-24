@@ -11,7 +11,20 @@ require'nvim-treesitter.configs'.setup {
   rainbow = {
       enable = true,
       extended_mode = true,
-  }
+  },
+  textobjects = {
+    select = {
+      enable = true,
+      lookahead = true,
+      keymaps = {
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ib"] = "@block.inner",
+        ["ab"] = "@block.outer",
+      },
+      include_surrounding_whitespace = true,
+    },
+  },
 }
 
 
