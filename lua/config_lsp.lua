@@ -45,6 +45,11 @@ require('lspconfig')['clangd'].setup{
     flags = lsp_flags,
 }
 
+require('lspconfig')['jdtls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
 require('lspconfig')['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,

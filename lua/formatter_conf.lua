@@ -19,6 +19,7 @@ require("formatter").setup {
         rust = require("formatter.filetypes.rust").rustfmt,
         c = clang_format,
         cpp = clang_format,
+        java = clang_format, 
     },
 
     ["*"] = {
