@@ -1,8 +1,8 @@
 return require('packer').startup(function (use)
-    
+
     use 'jiangmiao/auto-pairs'
     use {"akinsho/toggleterm.nvim", tag="v2.*"}
-         
+
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
@@ -23,21 +23,15 @@ return require('packer').startup(function (use)
 
     use 'mbbill/undotree'
 
-    use({
-        'rose-pine/neovim',
-        dark_variant = "moon",
-        as = 'rose-pine',
-        config = function()
-            require("rose-pine").setup()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
     use { 'mhartington/formatter.nvim' }
     use { 'neovim/nvim-lspconfig' }
     use { 'numToStr/Comment.nvim' }
--- mkdir
+    -- mkdir
     use { 'jghauser/mkdir.nvim' }
     use {"nvim-treesitter/nvim-treesitter-textobjects" }
+    use({
+        "neanias/everforest-nvim",
+    })
 end)
 
 
