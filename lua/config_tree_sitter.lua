@@ -1,3 +1,8 @@
+local function disable_rainbow_large_files(_, buf_num) 
+    local bname = vim.api.nvim_buf_get_name(buf_num)
+    local buf_size = vim.api.nvim_call_function("getfsize", { bname })
+    return buf_size > 100000
+end
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
@@ -11,6 +16,7 @@ require'nvim-treesitter.configs'.setup {
   rainbow = {
       enable = true,
       extended_mode = true,
+      disable = disable_rainbow_large_files,
   },
   textobjects = {
     select = {
