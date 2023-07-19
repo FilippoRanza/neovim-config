@@ -23,6 +23,7 @@ highlight LineNr ctermfg=yellow
 source $HOME/.config/nvim/make.vim
 source $HOME/.config/nvim/mappings.vim
 source $HOME/.config/nvim/find_path.vim
+source $HOME/.config/nvim/skeleton.vim
 
 set autowrite
 set completeopt-=preview
