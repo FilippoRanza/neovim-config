@@ -18,5 +18,6 @@ endfunction
 
 noremap <space>i :call LaunchIpython()<CR>
 noremap <space><CR> :!python %<CR>
+noremap FF :Format<CR>
 
 
