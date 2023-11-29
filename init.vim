@@ -27,3 +27,5 @@ source $HOME/.config/nvim/skeleton.vim
 
 set autowrite
 set completeopt-=preview
+
+let g:c_syntax_for_h = 1
