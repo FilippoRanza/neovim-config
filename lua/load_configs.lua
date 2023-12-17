@@ -21,5 +21,5 @@ require("config_lsp")
 
 require("config_comment")
 
-require("config_everforest")
+require("config_colorscheme")
 

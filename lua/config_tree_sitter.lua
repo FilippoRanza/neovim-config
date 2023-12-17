@@ -11,7 +11,8 @@ require'nvim-treesitter.configs'.setup {
   sync_install = false,
 
   highlight = {
-    enable = true,
+      enable = true,
+      additional_vim_regex_highlighting = false
   },
   rainbow = {
       enable = true,
@@ -19,17 +20,17 @@ require'nvim-treesitter.configs'.setup {
       disable = disable_rainbow_large_files,
   },
   textobjects = {
-    select = {
-      enable = true,
-      lookahead = true,
-      keymaps = {
-        ["af"] = "@function.outer",
-        ["if"] = "@function.inner",
-        ["ib"] = "@block.inner",
-        ["ab"] = "@block.outer",
+      select = {
+          enable = true,
+          lookahead = true,
+          keymaps = {
+              ["af"] = "@function.outer",
+              ["if"] = "@function.inner",
+              ["ib"] = "@block.inner",
+              ["ab"] = "@block.outer",
+          },
+          include_surrounding_whitespace = true,
       },
-      include_surrounding_whitespace = true,
-    },
   },
 }
 

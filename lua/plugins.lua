@@ -29,9 +29,7 @@ return require('packer').startup(function (use)
     -- mkdir
     use { 'jghauser/mkdir.nvim' }
     use {"nvim-treesitter/nvim-treesitter-textobjects" }
-    use({
-        "neanias/everforest-nvim",
-    })
+    use { "catppuccin/nvim", as = "catppuccin" }
 end)
 
 
