@@ -30,6 +30,7 @@ return require('packer').startup(function (use)
     use { 'jghauser/mkdir.nvim' }
     use {"nvim-treesitter/nvim-treesitter-textobjects" }
     use { "catppuccin/nvim", as = "catppuccin" }
+    use { "christoomey/vim-tmux-navigator" }
 end)
 
 
