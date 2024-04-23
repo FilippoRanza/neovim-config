@@ -8,6 +8,7 @@ source $HOME/.config/nvim/basic-nvim-config.vim
 source $HOME/.config/nvim/neovide-config.vim
 
 " Use Packer.nvim package manager
+lua require('bootstrap')
 lua require('plugins')
 lua require('load_configs')
 
@@ -15,8 +16,8 @@ lua require('load_configs')
 source $HOME/.config/nvim/airline-config.vim
 
 " Set color scheme: must be after plugins load
-colorscheme catppuccin
 let g:airline_theme = "catppuccin"
+colorscheme catppuccin-frappe
 
 highlight LineNr guiFg=yellow
 highlight LineNr ctermfg=yellow
