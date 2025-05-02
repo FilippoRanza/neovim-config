@@ -14,11 +14,11 @@ require'nvim-treesitter.configs'.setup {
       enable = true,
       additional_vim_regex_highlighting = false
   },
-  rainbow = {
-      enable = true,
-      extended_mode = true,
-      disable = disable_rainbow_large_files,
-  },
+  -- rainbow = {
+  --     enable = false,
+  --     extended_mode = false,
+  --     disable = disable_rainbow_large_files,
+  -- },
   textobjects = {
       select = {
           enable = true,

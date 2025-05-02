@@ -6,9 +6,9 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
-vim.keymap.set('n', '<space>ds', vim.diagnostic.enable)
-vim.keymap.set('n', '<space>dh', vim.diagnostic.disable)
-vim.diagnostic.disable()
+vim.keymap.set('n', '<space>ds', function () vim.diagnostic.enable(true) end)
+vim.keymap.set('n', '<space>dh', function () vim.diagnostic.enable(false) end)
+vim.diagnostic.enable(false)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer

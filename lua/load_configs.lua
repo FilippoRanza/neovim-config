@@ -21,3 +21,6 @@ require("config_comment")
 
 require("config_colorscheme")
 
+require("include_guards")
+
+require("jump_to_file")
