@@ -2,13 +2,13 @@ autocmd TermOpen * setlocal nonumber norelativenumber
 
 function MakeTest()
     wall
-    belowright 20split term://make test
+    belowright 20split term://make -j test
     call feedkeys("G")
 endfun
 
 function MakeBuild()
     wall
-    belowright 20split term://make build
+    belowright 20split term://make -j build
     call feedkeys("G")
 endfun
 
