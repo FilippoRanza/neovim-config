@@ -2,11 +2,19 @@ local function add_include_statement()
     local bufname = vim.api.nvim_buf_get_name(0)  -- Get full file path
     local filename = bufname:match("[^/\\]+$")   -- Extract file name only
 
-    if not filename or not filename:match("%.cpp$") then
+    local regex = "";
+    local subs = "";
+    if filename:match("%.cpp$") then
+        regex = "%.cpp$"
+        subs = ".hpp"
+    elseif filename:match("%.c$") then
+        regex = "%.c$"
+        subs = ".h"
+    else
         return  -- Exit if not a .cpp file
     end
 
-    local header_name = filename:gsub("%.cpp$", ".hpp")  -- Replace .cpp with .hpp
+    local header_name = filename:gsub(regex, subs)  -- Replace .cpp with .hpp
 
     -- Insert #include statement
     local lines = {
@@ -25,12 +33,16 @@ vim.api.nvim_create_autocmd("BufNewFile", {
     callback = add_include_statement,
 })
 
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.c",
+    callback = add_include_statement,
+})
 
 local function set_include_guard()
     local bufname = vim.api.nvim_buf_get_name(0)  -- Get full file path
     local filename = bufname:match("[^/\\]+$")   -- Extract file name only
 
-    if not filename or not filename:match("%.hpp$") then
+    if not filename or (not filename:match("%.hpp$") and not filename:match("%.h$")) then
         return  -- Exit if the file is not a .hpp file
     end
 
@@ -53,6 +65,11 @@ end
 -- Create a Neovim command to run the function
 vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = "*.hpp",
+    callback = set_include_guard,
+})
+
+vim.api.nvim_create_autocmd("BufNewFile", {
+    pattern = "*.h",
     callback = set_include_guard,
 })
 
