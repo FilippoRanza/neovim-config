@@ -5,6 +5,7 @@ require("catppuccin").setup({
         comments = {"italics"},
     },
     integrations = {
+        airline = true,
         nvimtree = true,
         treesitter = true
     }

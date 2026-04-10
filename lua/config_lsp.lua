@@ -14,7 +14,7 @@ vim.diagnostic.enable(false)
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  -- vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -63,3 +63,8 @@ vim.lsp.config('rust_analyzer', {
       ["rust-analyzer"] = {}
     }
 })
+
+vim.lsp.enable('clangd')
+vim.lsp.enable('jdtls')
+vim.lsp.enable('pyright')
+vim.lsp.enable('rust_analyzer')
