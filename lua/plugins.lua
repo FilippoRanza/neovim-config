@@ -9,12 +9,11 @@ require("lazy").setup({
     'vim-airline/vim-airline-themes',
     'tpope/vim-fugitive',
     'lervag/vimtex',
+    { "nvim-treesitter/nvim-treesitter-textobjects" },
     {
       "neovim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
-      dependencies = {
-        "nvim-treesitter/nvim-treesitter-textobjects",
-      },
+      lazy = false
     },
     'mizlan/iswap.nvim',
     { 'nvim-telescope/telescope.nvim', },
@@ -24,7 +23,6 @@ require("lazy").setup({
     { 'neovim/nvim-lspconfig' },
     { 'numToStr/Comment.nvim' },
     { 'jghauser/mkdir.nvim' },
-    -- {"nvim-treesitter/nvim-treesitter-textobjects" },
     { "catppuccin/nvim"},
     { "christoomey/vim-tmux-navigator" },
     "vim-scripts/applescript.vim",
