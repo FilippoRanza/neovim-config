@@ -26,6 +26,8 @@ require("lazy").setup({
     { "catppuccin/nvim"},
     { "christoomey/vim-tmux-navigator" },
     "vim-scripts/applescript.vim",
+    {"wellle/targets.vim"},
+    { 'neovim-treesitter/treesitter-parser-registry' }
 }
 )
 
